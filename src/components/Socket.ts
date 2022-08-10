@@ -1,7 +1,5 @@
 import { io } from "socket.io-client";
 
-
-
-let Socket = io("http://localhost:4000");
+let Socket = io(import.meta.env.VITE_API_URL);
 
 export default Socket;
