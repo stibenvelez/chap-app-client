@@ -77,7 +77,7 @@ const Chat = ({ name }: ChatProps) => {
 
         sendMessage();
     };
-console.log(writing.message);
+
     return (
         <div className="flex flex-col space-y-8 p-2 w-full lg:w-1/3 md:w-1/2 ">
             <h1 className="text-3xl font-bold text-center text-indigo-600">
