@@ -34,6 +34,12 @@ const Chat = ({ name }: ChatProps) => {
             setMessages([...messages, message]);
         });
 
+        return () => {
+            socket.off();
+        };
+    }, [messages]);
+
+    useEffect(() => {
         socket.on("writing", (notification) => {
             setWriting(notification);
             setTimeout(() => {
